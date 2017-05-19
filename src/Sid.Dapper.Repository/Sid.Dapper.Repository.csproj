@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard1.6;net451</TargetFrameworks>
-    <Authors>Symon Zhao</Authors>
-    <Company />
+    <Authors>Sid Zhao</Authors>
+    <Company>Sid Zhao</Company>
     <Description>Sid.Dapper.Repository is an extensions to intergration with dapper-dot-net and MicroOrm.Dapper.Repositories.</Description>
-    <Copyright>2016 © Symon Zhao</Copyright>
+    <Copyright>2016 © Sid Zhao</Copyright>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/sidzhao/dapper-repository</PackageProjectUrl>
     <RepositoryUrl>https://github.com/sidzhao/dapper-repository.git</RepositoryUrl>
