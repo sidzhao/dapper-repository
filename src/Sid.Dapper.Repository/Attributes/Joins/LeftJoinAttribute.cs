@@ -1,4 +1,4 @@
-﻿namespace Dapper.Extensions.Repository.Attributes.Joins
+﻿namespace Sid.Dapper.Repository.Attributes.Joins
 {
     /// <summary>
     /// Generate LEFT JOIN

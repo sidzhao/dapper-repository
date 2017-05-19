@@ -1,7 +1,7 @@
 ﻿using System.Data;
 using Microsoft.Extensions.Logging;
 
-namespace Dapper.Extensions.Repository
+namespace Sid.Dapper.Repository
 {
     public interface IRepositoryFactory
     {

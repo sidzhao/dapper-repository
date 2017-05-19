@@ -1,6 +1,6 @@
 using System;
 
-namespace Dapper.Extensions.Repository.Attributes.Joins
+namespace Sid.Dapper.Repository.Attributes.Joins
 {
     /// <summary>
     /// Base JOIN for LEFT/INNER/RIGHT

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Reflection;
 
-namespace Dapper.Extensions.Repository.SqlGenerator
+namespace Sid.Dapper.Repository.SqlGenerator
 {
 
     /// <summary>

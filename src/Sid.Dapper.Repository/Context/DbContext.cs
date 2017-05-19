@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using Dapper.Extensions.Repository.Extensions;
 using Microsoft.Extensions.Logging;
+using Sid.Dapper.Repository;
 
-namespace Dapper.Extensions.Repository.Context
+namespace Sid.Dapper.Repository.Context
 {
     /// <summary>
     /// DbContext

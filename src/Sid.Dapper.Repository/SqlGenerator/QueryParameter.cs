@@ -1,4 +1,4 @@
-﻿namespace Dapper.Extensions.Repository.SqlGenerator
+﻿namespace Sid.Dapper.Repository.SqlGenerator
 {
     /// <summary>
     /// Class that models the data structure in coverting the expression tree into SQL and Params.

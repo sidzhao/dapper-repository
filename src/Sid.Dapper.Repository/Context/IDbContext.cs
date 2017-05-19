@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 
-namespace Dapper.Extensions.Repository.Context
+namespace Sid.Dapper.Repository.Context
 {
     /// <summary>
     /// DbContext interface

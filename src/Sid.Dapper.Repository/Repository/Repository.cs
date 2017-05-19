@@ -7,13 +7,13 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Threading.Tasks;
-using Dapper.Extensions.Repository.Extensions;
-using Dapper.Extensions.Repository.Helper;
-using Dapper.Extensions.Repository.SqlGenerator;
+using Dapper;
 using Microsoft.Extensions.Logging;
-using Dapper.Extensions;
+using Sid.Dapper.Repository.Extensions;
+using Sid.Dapper.Repository.Helper;
+using Sid.Dapper.Repository.SqlGenerator;
 
-namespace Dapper.Extensions.Repository
+namespace Sid.Dapper.Repository
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {

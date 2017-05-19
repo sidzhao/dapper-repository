@@ -1,10 +1,10 @@
 ﻿using System.Data;
-using Dapper.Extensions.Repository.Context;
-using Dapper.Extensions.Repository.Tests.Entities;
 using Moq;
+using Sid.Dapper.Repository.Context;
+using Sid.Dapper.Repository.Tests.Entities;
 using Xunit;
 
-namespace Dapper.Extensions.Repository.Tests
+namespace Sid.Dapper.Repository.Tests.Tests
 {
     public class DbContextTest
     {

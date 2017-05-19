@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Dapper.Extensions.Repository.Tests.Entities
+namespace Sid.Dapper.Repository.Tests.Entities
 {
     [Table("Images")]
     public class Image : Entity

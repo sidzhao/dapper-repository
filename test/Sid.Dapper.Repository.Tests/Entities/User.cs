@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using Dapper.Extensions.Repository.Attributes.LogicalDelete;
+using Sid.Dapper.Repository.Attributes.LogicalDelete;
 
-namespace Dapper.Extensions.Repository.Tests.Entities
+namespace Sid.Dapper.Repository.Tests.Entities
 {
     [Table("Users")]
     public class User : Entity

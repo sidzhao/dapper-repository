@@ -1,10 +1,10 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
-using Dapper.Extensions.Repository.Tests.Entities;
-using Dapper.Extensions.Repository.Tests.Fixture;
+using Sid.Dapper.Repository.Tests.Entities;
+using Sid.Dapper.Repository.Tests.Fixture;
 using Xunit;
 
-namespace Dapper.Extensions.Repository.Tests
+namespace Sid.Dapper.Repository.Tests.Tests
 {
     public class RepositoryTest : IClassFixture<MsSqlDatabaseFixture>
     {

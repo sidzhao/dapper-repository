@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace Dapper.Extensions.Repository.Helper
+namespace Sid.Dapper.Repository.Helper
 {
     internal static class TypeHelper
     {

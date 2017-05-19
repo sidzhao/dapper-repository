@@ -1,4 +1,4 @@
-﻿namespace Dapper.Extensions.Repository.SqlGenerator
+﻿namespace Sid.Dapper.Repository.SqlGenerator
 {
     /// <summary>
     /// Type Sql provider

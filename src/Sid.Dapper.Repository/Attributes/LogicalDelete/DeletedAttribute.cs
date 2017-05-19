@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Dapper.Extensions.Repository.Attributes.LogicalDelete
+namespace Sid.Dapper.Repository.Attributes.LogicalDelete
 {
     /// <summary>
     /// Use with "Status" for logical delete

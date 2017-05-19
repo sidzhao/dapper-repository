@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 
-namespace Dapper.Extensions.Repository.SqlGenerator
+namespace Sid.Dapper.Repository.SqlGenerator
 {
 
     /// <summary>

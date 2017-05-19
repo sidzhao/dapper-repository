@@ -7,13 +7,13 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
-using Dapper.Extensions.Repository.Attributes;
-using Dapper.Extensions.Repository.Attributes.Joins;
-using Dapper.Extensions.Repository.Attributes.LogicalDelete;
-using Dapper.Extensions.Repository.Extensions;
-using Dapper.Extensions.Repository.Helper;
+using Sid.Dapper.Repository.Attributes;
+using Sid.Dapper.Repository.Attributes.Joins;
+using Sid.Dapper.Repository.Attributes.LogicalDelete;
+using Sid.Dapper.Repository.Extensions;
+using Sid.Dapper.Repository.Helper;
 
-namespace Dapper.Extensions.Repository.SqlGenerator
+namespace Sid.Dapper.Repository.SqlGenerator
 {
     /// <summary>
     /// Universal SqlGenerator for Tables

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq.Expressions;
 using System.Reflection;
-using Dapper.Extensions.Repository.Extensions;
+using Sid.Dapper.Repository.Extensions;
 
-namespace Dapper.Extensions.Repository.Helper
+namespace Sid.Dapper.Repository.Helper
 {
     internal static class ExpressionHelper
     {

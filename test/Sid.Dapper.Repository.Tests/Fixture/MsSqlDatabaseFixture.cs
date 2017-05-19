@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Data.SqlClient;
-using Dapper.Extensions.Repository.Context;
+using Dapper;
 using Microsoft.Extensions.Logging.Debug;
+using Sid.Dapper.Repository.Context;
 
-namespace Dapper.Extensions.Repository.Tests.Fixture
+namespace Sid.Dapper.Repository.Tests.Fixture
 {
     public class MsSqlDatabaseFixture : IDisposable
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace Dapper.Extensions.Repository.Extensions
+namespace Sid.Dapper.Repository.Extensions
 {
     internal static class LoggerExtensions
     {

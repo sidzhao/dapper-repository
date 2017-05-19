@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Dapper.Extensions.Repository.Attributes
+namespace Sid.Dapper.Repository.Attributes
 {
     /// <summary>
     /// Identity key

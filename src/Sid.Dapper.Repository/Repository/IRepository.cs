@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Dapper.Extensions.Repository.SqlGenerator;
+using Sid.Dapper.Repository.SqlGenerator;
 
-namespace Dapper.Extensions.Repository
+namespace Sid.Dapper.Repository
 {
     /// <summary>
     /// Repository interface
