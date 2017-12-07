@@ -36,8 +36,9 @@ namespace Sid.Dapper.Repository.Tests.Fixture
             dropTable("RecordsForInsertAsync");
             dropTable("RecordsForUpdate");
             dropTable("RecordsForDelete");
+            dropTable("Files");
 
-            Db.Connection.Execute(@"CREATE TABLE Users (Id int IDENTITY(1,1) not null, Name varchar(50) not null, Deleted bit not null, PRIMARY KEY (Id))");
+            Db.Connection.Execute(@"CREATE TABLE Users (Id int IDENTITY(1,1) not null, Name varchar(50) not null, Deleted bit not null, Status int not null, PRIMARY KEY (Id))");
             Db.Connection.Execute(@"CREATE TABLE Cars (Id int IDENTITY(1,1) not null, CarName varchar(50) not null, UserId int, PRIMARY KEY (Id))");
             Db.Connection.Execute(@"CREATE TABLE CarOptions (Id int IDENTITY(1,1) not null, OptionName varchar(50) not null, CarId int, PRIMARY KEY (Id))");
             Db.Connection.Execute(@"CREATE TABLE CarOptionImages (Id int IDENTITY(1,1) not null, Name varchar(50) not null, CarOptionId int, PRIMARY KEY (Id))");
@@ -53,11 +54,12 @@ namespace Sid.Dapper.Repository.Tests.Fixture
             Db.Connection.Execute(@"CREATE TABLE RecordsForUpdate (Id int IDENTITY(1,1) not null, [Name] varchar(50) not null, PRIMARY KEY (Id))");
             Db.Connection.Execute(@"CREATE TABLE RecordsForDelete (Id int IDENTITY(1,1) not null, [Name] varchar(50) not null, PRIMARY KEY (Id))");
 
+            Db.Connection.Execute(@"CREATE TABLE Files (Id int IDENTITY(1,1) not null, [Content] image not null, PRIMARY KEY (Id))");
 
-            Db.Connection.Execute($"INSERT INTO [dbo].[Users]([Name],[Deleted])VALUES('Name1', 0)");
-            Db.Connection.Execute($"INSERT INTO [dbo].[Users]([Name],[Deleted])VALUES('Name2', 0)");
-            Db.Connection.Execute($"INSERT INTO [dbo].[Users]([Name],[Deleted])VALUES('Name3', 1)");
-            Db.Connection.Execute($"INSERT INTO [dbo].[Users]([Name],[Deleted])VALUES('Name4', 0)");
+            Db.Connection.Execute($"INSERT INTO [dbo].[Users]([Name],[Deleted],[Status])VALUES('Name1', 0, 0)");
+            Db.Connection.Execute($"INSERT INTO [dbo].[Users]([Name],[Deleted],[Status])VALUES('Name2', 0, 0)");
+            Db.Connection.Execute($"INSERT INTO [dbo].[Users]([Name],[Deleted],[Status])VALUES('Name3', 1, 0)");
+            Db.Connection.Execute($"INSERT INTO [dbo].[Users]([Name],[Deleted],[Status])VALUES('Name4', 0, -1)");
             Db.Connection.Execute($"INSERT INTO [dbo].[Cars]([CarName],[UserId])VALUES('Car1', 1)");
             Db.Connection.Execute($"INSERT INTO [dbo].[Cars]([CarName],[UserId])VALUES('Car2', 1)");
             Db.Connection.Execute($"INSERT INTO [dbo].[Cars]([CarName],[UserId])VALUES('Car3', 1)");

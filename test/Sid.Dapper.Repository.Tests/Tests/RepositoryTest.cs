@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 using Sid.Dapper.Repository.Tests.Entities;
 using Sid.Dapper.Repository.Tests.Fixture;
 using Xunit;
+using System.IO;
+using System.Reflection;
 
 namespace Sid.Dapper.Repository.Tests.Tests
 {
@@ -43,6 +45,14 @@ namespace Sid.Dapper.Repository.Tests.Tests
             result = _fixture.Db.SetEntity<RecordsForInsert>().Insert(insertRecord2);
             Assert.True(result);
             Assert.True(insertRecord2.Id == 2);
+        }
+
+        [Fact]
+        public async Task TestInsertFile()
+        {
+            var fileEntity = new Entities.File { Content = System.Text.Encoding.UTF8.GetBytes("Test") };
+
+            await _fixture.Db.SetEntity<Entities.File>().InsertAsync(fileEntity);
         }
 
         #endregion
@@ -153,6 +163,18 @@ namespace Sid.Dapper.Repository.Tests.Tests
 
             count = await _fixture.Db.SetEntity<Role>().AnyAsync(p => p.UserId == 99);
             Assert.Equal(false, count);
+        }
+
+        #endregion
+
+        #region Select with lamada expression
+
+        [Fact]
+        public async Task TestSelectWithLamada()
+        {
+            var users = await _fixture.Db.SetEntity<User>().FindAllAsync(p=>p.Name == "Name1" && p.Id != 0 && p.Status != Status.Inactive);
+
+            Assert.Equal(users.Count(), 1);
         }
 
         #endregion

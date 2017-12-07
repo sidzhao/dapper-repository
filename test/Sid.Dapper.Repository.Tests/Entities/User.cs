@@ -16,6 +16,14 @@ namespace Sid.Dapper.Repository.Tests.Entities
 
         public IList<Role> Roles { get; set; }
 
+        public Status Status { get; set; }
+
         public Image Image { get; set; }
+    }
+
+    public enum Status
+    {
+        Active = 0,
+        Inactive = -1
     }
 }

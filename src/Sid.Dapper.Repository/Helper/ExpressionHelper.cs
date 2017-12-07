@@ -20,6 +20,13 @@ namespace Sid.Dapper.Repository.Helper
             {
                 // remove the trailing ) when convering.
                 propertyName = propertyName.Replace(")", string.Empty);
+
+                // remove such as ,Int 32 when convering
+                var iz = propertyName.IndexOf(',');
+                if (iz != -1)
+                {
+                    propertyName = propertyName.Substring(0, iz);
+                }
             }
 
             return propertyName;
@@ -112,12 +119,12 @@ namespace Sid.Dapper.Repository.Helper
 
         public static Func<PropertyInfo, bool> GetPrimitivePropertiesPredicate()
         {
-            return p => p.CanWrite && (p.PropertyType.IsValueType() || p.PropertyType.Name.Equals("String", StringComparison.OrdinalIgnoreCase));
+            return p => p.CanWrite && (p.PropertyType.IsValueType() || p.PropertyType.Name.Equals("String", StringComparison.OrdinalIgnoreCase) || p.PropertyType.Name.Equals("Byte[]", StringComparison.OrdinalIgnoreCase));
         }
 
         public static Func<PropertyInfo, bool> GetChildPropertiesPredicate()
         {
-            return p => p.CanWrite && !(p.PropertyType.IsValueType() || p.PropertyType.Name.Equals("String", StringComparison.OrdinalIgnoreCase));
+            return p => p.CanWrite && !(p.PropertyType.IsValueType() || p.PropertyType.Name.Equals("String", StringComparison.OrdinalIgnoreCase) || p.PropertyType.Name.Equals("Byte[]", StringComparison.OrdinalIgnoreCase));
         }
     }
 }
